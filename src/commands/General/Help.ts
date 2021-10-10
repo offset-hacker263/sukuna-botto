@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
             const n = [
             './assets/videos/offset/offset.mp4'
         ]
-        let sukuna = n[Math.floor(Math.random() * n.length)]
+        let offset = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
             const commands = this.handler.commands.keys()
             const categories: { [key: string]: ICommand[] } = {}
@@ -36,9 +36,9 @@ export default class Command extends BaseCommand {
                 }
             }
             let text = `
-Konichiwa! ${M.sender.username}, I'm Offset hacker , Know Your Place Fool 太陽
+Hi there! ${M.sender.username}, I'm Offset hacker , Know Your Place Fool 太陽
 
-My Pefix - /                 \n\n`
+My Pefix - #                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `❖┈ᕮ✧${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}✧ᕭ┈❖\n• \`\`\`${categories[
@@ -46,7 +46,7 @@ My Pefix - /                 \n\n`
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
+            return void this.client.sendMessage(M.from, { url: offset }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: `${text} 
  
