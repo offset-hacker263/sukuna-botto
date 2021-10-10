@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            './assets/videos/Sukuna/sukuna.mp4'
+            './assets/videos/offset/offset.mp4'
         ]
         let sukuna = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
                 }
             }
             let text = `
-Konichiwa! ${M.sender.username}, I'm Sukuna , Know Your Place Fool 太陽
+Konichiwa! ${M.sender.username}, I'm Offset hacker , Know Your Place Fool 太陽
 
 My Pefix - /                 \n\n`
             const keys = Object.keys(categories)
@@ -54,7 +54,7 @@ Sooooo, My work is done. Bye!
 Don't Summon Me Again (๑•﹏•)
 
 
-火┈[𝐆𝐚𝐦𝐛𝐚𝐫𝐞 𝐆𝐚𝐦𝐛𝐚𝐫𝐞]┈火
+火┈[*Offset hacker anonymous*]┈火
 
 👒 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
@@ -76,5 +76,5 @@ Don't Summon Me Again (๑•﹏•)
         )
     }
 
-    emojis = ['🈷️', '🈹️', '🈯️', '☮', '🈳️', '🈵️', '🈂️', '㊗️', '🈁️']
+    emojis = ['➿', '🎱', '✴️', '☮', '♀️', '💍', '💠', '♂️', '☢️']
 }
